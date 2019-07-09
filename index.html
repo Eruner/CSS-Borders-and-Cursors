@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy CSS (Border, Cursor)</title>
+<style>
+body{
+	padding-bottom: 8em;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+p {
+	padding : 0.75em;
+	display: inline-block;
+	margin: 0.5em;
+	background-color: #e6f7ff;
+}
+p.rounded {
+	border-radius : 0.5em 0;
+}
+.full-rounded {
+	border-radius : 1em;
+}
+.special{
+	border-style: groove;
+	cursor: pointer;
+	background-color: #e6f7ff;
+}
+.special:hover{
+	border-style: outset;
+}
+.special:active{
+	border-style: inset;
+}
+button, div, pre{
+	background-color: transparent;
+	padding: 0.5em;
+	margin: 0.5em;
+	display: inline-block;
+	font-size: 16px;
+	font-family: Times New Roman;
+}
+div{
+	user-select: all;
+}
+pre{
+	vertical-align: middle;
+}
+.noselect{
+	user-select: none;
+}
+h1{
+	text-align: center;
+}
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+</style>
+</head>
+<body>
+	<h1>Couple of CSS styles for quick copy-paste</h1>
+	<h3>Sharp Borders:</h3>
+	<p class="dotted">border-style: dotted;</p>
+	<p class="dashed">border-style: dashed;</p>
+	<p class="solid">border-style: solid;</p>
+	<p class="double">border-style: double;</p>
+	<p class="groove">border-style: groove;</p>
+	<p class="ridge">border-style: ridge;</p>
+	<p class="inset">border-style: inset;</p>
+	<p class="outset">border-style: outset;</p>
+	<p class="none">border-style: none;</p>
+	<p class="hidden">border-style: hidden;</p>
+	<p class="mix">border-style: dotted dashed solid double;</p>
+	<h3>Rounded Borders:</h3>
+	<p class="full-rounded dotted">border-style: dotted;<br/>border-radius: 1em;</p>
+	<p class="full-rounded dashed">border-style: dashed;<br/>border-radius: 1em;</p>
+	<p class="full-rounded solid">border-style: solid;<br/>border-radius: 1em;</p>
+	<p class="full-rounded double">border-style: double;<br/>border-radius: 1em;</p>
+	<p class="full-rounded groove">border-style: groove;<br/>border-radius: 1em;</p>
+	<p class="full-rounded ridge">border-style: ridge;<br/>border-radius: 1em;</p>
+	<p class="full-rounded inset">border-style: inset;<br/>border-radius: 1em;</p>
+	<p class="full-rounded outset">border-style: outset;<br/>border-radius: 1em;</p>
+	<p class="full-rounded none">border-style: none;<br/>border-radius: 1em;</p>
+	<p class="full-rounded hidden">border-style: hidden;<br/>border-radius: 1em;</p>
+	<p class="full-rounded mix">border-style: dotted dashed solid double;<br/>border-radius: 1em;</p>
+	<br/>
+	<h3>Combine styles to make cool button:</h3>
+	<p class="special">Click me<br/>(paragraph)</p>
+	<div class="special">Click me<br/>(div)</div>
+	<button class="special">Click me <br/>(button)</button>
+	<pre class="special">each variant has these styles:
+{
+	border-style: groove;
+	cursor: pointer;
+}
+:hover{
+	border-style: outset;
+}
+:active{
+	border-style: inset;
+}</pre><pre class="special noselect">and use this to remove Highlight 
+(background) of selection:
+
+user-select: none;
+
+</pre>
+	<h3>Cursors:</h3>
+	<p class="alias">cursor: alias;</p>
+	<p class="all-scroll">all-cursor: scroll;</p>
+	<p class="auto">cursor: auto;</p>
+	<p class="cell">cursor: cell;</p>
+	<p class="context-menu">context-cursor: menu;</p>
+	<p class="col-resize">col-cursor: resize;</p>
+	<p class="copy">cursor: copy;</p>
+	<p class="crosshair">cursor: crosshair;</p>
+	<p class="default">cursor: default;</p>
+	<p class="e-resize">cursor: e-resize;</p>
+	<p class="ew-resize">cursor: ew-resize;</p>
+	<p class="grab">cursor: grab;</p>
+	<p class="grabbing">cursor: grabbing;</p>
+	<p class="help">cursor: help;</p>
+	<p class="move">cursor: move;</p>
+	<p class="n-resize">cursor: n-resize;</p>
+	<p class="ne-resize">cursor: ne-resize;</p>
+	<p class="nesw-resize">cursor: nesw-resize;</p>
+	<p class="ns-resize">cursor: ns-resize;</p>
+	<p class="nw-resize">cursor: nw-resize;</p>
+	<p class="nwse-resize">cursor: nwse-resize;</p>
+	<p class="no-drop">cursor: no-drop;</p>
+	<p class="none">cursor: none;</p>
+	<p class="not-allowed">cursor: not-allowed;</p>
+	<p class="pointer">cursor: pointer;</p>
+	<p class="progress">cursor: progress;</p>
+	<p class="row-resize">cursor: row-resize;</p>
+	<p class="s-resize">cursor: s-resize;</p>
+	<p class="se-resize">cursor: se-resize;</p>
+	<p class="sw-resize">cursor: sw-resize;</p>
+	<p class="text">cursor: text;</p>
+	<p class="url">cursor: url;</p>
+	<p class="w-resize">cursor: w-resize;</p>
+	<p class="wait">cursor: wait;</p>
+	<p class="zoom-in">cursor: zoom-in;</p>
+	<p class="zoom-out">cursor: zoom-out;</p>
+</body>
+</html>
